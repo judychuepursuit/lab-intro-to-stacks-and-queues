@@ -59,6 +59,8 @@ You will
   - `isEmpty` check if list is empty
   - `findMin` data value
   - `peek` top node
+
+  BONUS:
   - `sort` - sort the stack into ascending order. **CHALLENGE** only use stacks to achieve this (no arrays or objects etc.)
 
 - Create a queue with properties
@@ -68,7 +70,7 @@ You will
   - `size`
   - `max` value
 
-- Stack methods
+- Queue methods
 
   - `count`
   - `dequeue`
