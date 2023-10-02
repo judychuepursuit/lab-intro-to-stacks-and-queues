@@ -10,7 +10,7 @@ class Node {
   }
 }
 
-// created Stack methods
+// created Stack methods -LIFO
 class Stack {
   constructor() {
     this.top = null
@@ -44,6 +44,7 @@ class Stack {
   }
 
   findMin() {
+    // Ahmad had   let min = infinity;
     let min = this.top.data;
     let node = this.top;
     while (node) {
@@ -66,7 +67,7 @@ class Stack {
 //     // console.log("Stack is empty");
 //   }
 }
-
+// QUEUE-FIFO
 class Queue {
   constructor(value) {
     this.first = null;
@@ -79,7 +80,7 @@ class Queue {
     return this.size;
 
   }
-  // same as push = (adds the specified elements to the end of an array and returns the new length of the array.)= dequeue from another queue
+  // (The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.)= dequeue from another queue
   dequeue() {
     // removed these from answer from reading and tests still passed
     // if (this.first == null) {
@@ -103,7 +104,7 @@ class Queue {
     return this.first;
   }
 
-// same as pop (removes the last element from an array and returns that element. This method changes the length of the array.)= enqueue from another queue
+// (The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.)= enqueue from another queue
 enqueue(data) {
   let newItem = new Node(data);
   if (!this.first) {
